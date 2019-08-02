@@ -1,7 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const paths = require('./paths');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: paths.appEntry,
   module: {
     rules: [
       {
@@ -12,7 +13,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: paths.mainTemplate
     })
   ]
 };

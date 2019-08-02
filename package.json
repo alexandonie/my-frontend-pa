@@ -5,7 +5,7 @@
   "description": "🧩 A webpack boilerplate for static websites.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config ./config/webpack.dev.js",
+    "start": "webpack-dev-server --config ./config/webpack.dev.js --open",
     "build": "webpack --config ./config/webpack.prod.js"
   },
   "repository": {
@@ -31,6 +31,7 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
     "webpack-merge": "^4.2.1"
   }
 }

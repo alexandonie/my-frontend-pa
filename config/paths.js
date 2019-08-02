@@ -3,7 +3,11 @@ const path = require('path');
 
 const root = fs.realpathSync(process.cwd());
 
+const resolvePath = relativePath => path.resolve(root, relativePath);
+
 module.exports = {
   root,
-  dist: path.resolve(root, 'dist')
+  dist: resolvePath('dist'),
+  appEntry: resolvePath('src/index.js'),
+  mainTemplate: resolvePath('src/index.html')
 };
