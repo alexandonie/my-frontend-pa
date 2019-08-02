@@ -1,0 +1,29 @@
+{
+  "name": "frontend-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "🧩 A webpack boilerplate for static websites.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandonie/frontend-assistant.git"
+  },
+  "keywords": [
+    "webpack",
+    "static",
+    "boilerplate"
+  ],
+  "author": "Alex Andonie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandonie/frontend-assistant/issues"
+  },
+  "homepage": "https://github.com/alexandonie/frontend-assistant#readme",
+  "devDependencies": {
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
