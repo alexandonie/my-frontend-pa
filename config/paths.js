@@ -9,5 +9,5 @@ module.exports = {
   root,
   dist: resolvePath('dist'),
   appEntry: resolvePath('src/index.js'),
-  mainTemplate: resolvePath('src/index.html')
+  appTemplate: resolvePath('src/index.html')
 };

@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: paths.mainTemplate
+      template: paths.appTemplate
     })
   ]
 };
