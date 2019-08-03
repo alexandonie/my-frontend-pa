@@ -1,8 +1,8 @@
 {
-  "name": "frontend-assistant",
+  "name": "my-frontend-pa",
   "version": "1.0.0",
   "private": true,
-  "description": "🧩 A webpack boilerplate for static websites.",
+  "description": "🤵🏻 My front-end personal assistant, a webpack boilerplate for static websites",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.dev.js --open",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandonie/frontend-assistant.git"
+    "url": "git+https://github.com/alexandonie/my-frontend-pa.git"
   },
   "keywords": [
     "webpack",
@@ -20,9 +20,9 @@
   "author": "Alex Andonie",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alexandonie/frontend-assistant/issues"
+    "url": "https://github.com/alexandonie/my-frontend-pa/issues"
   },
-  "homepage": "https://github.com/alexandonie/frontend-assistant#readme",
+  "homepage": "https://github.com/alexandonie/my-frontend-pa#readme",
   "devDependencies": {
     "css-loader": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",

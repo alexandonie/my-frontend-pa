@@ -1,2 +1,2 @@
-# frontend-assistant
-🧩 A webpack boilerplate for static websites.
+# my-frontend-pa
+🤵🏻 My front-end personal assistant, a webpack boilerplate for static websites
