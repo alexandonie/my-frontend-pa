@@ -5,7 +5,7 @@
   "description": "🤵🏻 My front-end personal assistant, a webpack boilerplate for static websites",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./config/webpack.dev.js --open",
+    "start": "webpack-dev-server --config ./config/webpack.dev.js",
     "build": "webpack --config ./config/webpack.prod.js"
   },
   "repository": {
