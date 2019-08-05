@@ -8,4 +8,14 @@ function test () {
   return sum;
 }
 
-console.log('Hello world!');
+class Main {
+  constructor () {
+    this.bla();
+  }
+
+  bla () {
+    console.log('new main object created');
+  }
+}
+
+const praa = new Main();
