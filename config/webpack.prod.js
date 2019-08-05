@@ -29,7 +29,12 @@ module.exports = merge(common, {
         template: paths.appTemplate,
         minify: {
           collapseWhitespace: true,
-          removeComments: true
+          removeComments: true,
+          keepClosingSlash: true,
+          useShortDoctype: true,
+          removeEmptyAttributes: true,
+          minifyJS: true,
+          minifyCSS: true
         }
       })
     ]
