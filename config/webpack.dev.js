@@ -9,11 +9,31 @@ module.exports = merge(common, {
     filename: '[name].bundle.js',
     path: paths.dist
   },
+  devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
       },
     ]
   },
