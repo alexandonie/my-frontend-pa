@@ -2,7 +2,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const paths = require('./paths');
 
 module.exports = {
-  entry: paths.appEntry,
+  entry: {
+    main: paths.appEntry
+  },
   module: {
     rules: [
       {
