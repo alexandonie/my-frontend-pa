@@ -6,6 +6,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const PurgeCssPlugin = require('purgecss-webpack-plugin');
+const glob = require('glob');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -43,6 +45,9 @@ module.exports = merge(common, {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contentHash].css'
+    }),
+    new PurgeCssPlugin({
+      paths: glob.sync(`${paths.src}/**/*`,  { nodir: true })
     })
   ]
 });
