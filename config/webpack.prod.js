@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -23,7 +24,14 @@ module.exports = merge(common, {
   optimization: {
     minimizer: [
       new OptimizeCssAssetsPlugin(),
-      new TerserPlugin()
+      new TerserPlugin(),
+      new HtmlWebpackPlugin({
+        template: paths.appTemplate,
+        minify: {
+          collapseWhitespace: true,
+          removeComments: true
+        }
+      })
     ]
   },
   plugins: [
