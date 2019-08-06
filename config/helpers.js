@@ -21,7 +21,8 @@ const generateHtmlPluginTemplates = (minify = false) => {
       const config = {
         filename: fileName === 'index' ? `${fileName}.html` : `${fileName}/index.html`,
         template: templatesLocation + '/' + file,
-        minify
+        minify,
+        favicon: resolvePath('src/favicon.ico')
       };
 
       htmlTemplatePluginObjects.push(new HtmlWebpackPlugin(config));

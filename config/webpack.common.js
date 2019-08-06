@@ -4,6 +4,9 @@ module.exports = {
   entry: {
     main: paths.appEntry
   },
+  output: {
+    publicPath: '/'
+  },
   module: {
     rules: [
       {
@@ -19,8 +22,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[hash].[ext]',
-            outputPath: 'images',
-            publicPath: '/images'
+            outputPath: 'images'
           }
         }
       },
