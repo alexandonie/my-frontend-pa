@@ -1,14 +1,7 @@
-const fs = require('fs');
-const path = require('path');
-
-const root = fs.realpathSync(process.cwd());
-
-const resolvePath = relativePath => path.resolve(root, relativePath);
+const { resolvePath } = require('./helpers');
 
 module.exports = {
-  root,
   src: resolvePath('src'),
   dist: resolvePath('dist'),
-  appEntry: resolvePath('src/index.js'),
-  appTemplate: resolvePath('src/index.html')
+  appEntry: resolvePath('src/index.js')
 };

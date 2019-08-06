@@ -5,9 +5,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PurgeCssPlugin = require('purgecss-webpack-plugin');
 const glob = require('glob');
+const { generateHtmlPluginTemplates } = require('./helpers');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -27,17 +27,14 @@ module.exports = merge(common, {
     minimizer: [
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
-      new HtmlWebpackPlugin({
-        template: paths.appTemplate,
-        minify: {
-          collapseWhitespace: true,
-          removeComments: true,
-          keepClosingSlash: true,
-          useShortDoctype: true,
-          removeEmptyAttributes: true,
-          minifyJS: true,
-          minifyCSS: true
-        }
+      ...generateHtmlPluginTemplates({
+        collapseWhitespace: true,
+        removeComments: true,
+        keepClosingSlash: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        minifyJS: true,
+        minifyCSS: true
       })
     ]
   },

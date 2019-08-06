@@ -7,8 +7,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
-        use: ['html-loader']
+        test: /\.hbs$/,
+        loader: 'handlebars-loader',
+        query: {
+          inlineRequires: '/images/'
+        }
       },
       {
         test: /\.(svg|png|jpg|jpeg|gif)$/,
@@ -16,7 +19,8 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[hash].[ext]',
-            outputPath: 'images'
+            outputPath: 'images',
+            publicPath: '/images'
           }
         }
       },

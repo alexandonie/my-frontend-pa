@@ -1,0 +1,43 @@
+{{#> layouts/base title="Front-end PA | Home"}}
+  {{#*inline "head-block"}}
+    <style>
+      .wrapper2 {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .random-class2 {
+        margin: 0;
+        padding: 0;
+        background: orange;
+      }
+    </style>
+  {{/inline}}
+
+  {{#*inline "content-block"}}
+    <h1>Hi!</h1>
+    <p>I'm your front-end assistant ^_^</p>
+
+    <a href="/about">Take me to the about page</a>
+
+
+    <!-- Testing the html optimizer -->
+
+
+    <img src="../images/1.png">
+    <img src="../images/2.jpg">
+    <img src="../images/3.jpeg">
+    <img src="../images/4.gif">
+  {{/inline}}
+
+  {{#*inline "scripts-block"}}
+    <script>
+      function test () {
+        var bla = 'hello';
+        var bla2 = 'hello2';
+        var sum = bla + ' ' + bla2;
+        // random comment
+        return sum;
+      }
+    </script>
+  {{/inline}}
+{{/layouts/base}}

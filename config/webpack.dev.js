@@ -1,7 +1,7 @@
 const common = require('./webpack.common');
 const merge = require('webpack-merge');
 const paths = require('./paths');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { generateHtmlPluginTemplates } = require('./helpers');
 
 module.exports = merge(common, {
   mode: 'development',
@@ -38,11 +38,10 @@ module.exports = merge(common, {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: paths.appTemplate
-    })
+    ...generateHtmlPluginTemplates()
   ],
   devServer: {
+    contentBase: paths.dist,
     open: true,
     host: process.env.HOST || '0.0.0.0',
     port: 3000,
