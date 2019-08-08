@@ -1,9 +1,9 @@
-import { test } from './utils';
+import { removeHyphens } from './utils';
 
-class Main {
-  bla () {
-    console.log('new main object created', test());
+class App {
+  init () {
+    console.log(removeHyphens('H-e-l-l-o- -w-o-r-l-d-!'));
   }
 }
 
-export default Main;
+export default App;

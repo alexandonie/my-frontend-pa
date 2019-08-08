@@ -1,0 +1,9 @@
+html, body {
+  font-family: sans-serif;
+  font-size: 16px;
+
+  // making sure the fonts will render the same across different web browsers
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

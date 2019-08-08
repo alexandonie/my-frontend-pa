@@ -1,43 +1,108 @@
 {{#> layouts/base title="Front-end PA | Home"}}
   {{#*inline "head-block"}}
     <style>
-      .wrapper2 {
-        width: 80%;
-        margin: 0 auto;
-      }
-      .random-class2 {
-        margin: 0;
-        padding: 0;
-        background: orange;
+      .this-is-how-you-use-internal-styling {
+        background: pink;
       }
     </style>
   {{/inline}}
 
   {{#*inline "content-block"}}
-    <h1>Hi!</h1>
-    <p>I'm your front-end assistant ^_^</p>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
 
-    <a href="/about">Take me to the about page</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo eius reprehenderit in. Quae recusandae excepturi voluptate minima sit possimus aut tenetur, reprehenderit, nesciunt perspiciatis illo maxime, odio facilis earum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, deleniti, quidem quisquam consectetur libero odio ducimus dignissimos maiores eum velit dolores beatae magnam a eaque amet excepturi omnis qui doloremque!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet repellat omnis veniam facere quibusdam magnam asperiores, officia, mollitia voluptates illum esse cumque quo quis! Et incidunt quis natus quibusdam. Lorem ipsum, dolor sit.
+    </p>
 
+    <strong>This is the strong text</strong>
 
-    <!-- Testing the html optimizer -->
+    <em>This is the emphasized text</em>
 
+    <mark>This is the marked text</mark>
 
-    <img src="../images/1.png">
-    <img src="../images/2.jpg">
-    <img src="../images/3.jpeg">
-    <img src="../images/4.gif">
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+      <li>List item 5</li>
+    </ul>
+
+    <ol>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+      <li>List item 5</li>
+    </ol>
+
+    <button type="button">Button type 1</button>
+    <button type="button">Button type 2</button>
+    <button type="button">Button type 3</button>
+
+    <form action="#" method="#">
+      <div class="form-group">
+        <label for="textInput">Text input</label>
+        <input type="text" id="textInput" name="textInput">
+      </div>
+
+      <div class="form-group">
+        <span>Checkbox input</span>
+        <label>
+          <input type="checkbox" name="checkboxInput1"> Option 1
+        </label>
+        <label>
+          <input type="checkbox" name="checkboxInput2"> Option 2
+        </label>
+        <label>
+          <input type="checkbox" name="checkboxInput3"> Option 3
+        </label>
+      </div>
+
+      <div class="form-group">
+        <span>Radio input</span>
+        <label>
+          <input type="radio" name="radioInput"> Option 1
+        </label>
+        <label>
+          <input type="radio" name="radioInput"> Option 2
+        </label>
+        <label>
+          <input type="radio" name="radioInput"> Option 3
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="selectInput">Select input</label>
+        <select name="selectInput" id="selectInput">
+          <option value="" disabled selected>Select an option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="textarea">Textarea</label>
+        <textarea name="textarea" id="textarea" cols="45" rows="7"></textarea>
+      </div>
+    </form>
   {{/inline}}
 
   {{#*inline "scripts-block"}}
     <script>
-      function test () {
-        var bla = 'hello';
-        var bla2 = 'hello2';
-        var sum = bla + ' ' + bla2;
-        // random comment
-        return sum;
-      }
+      console.log('This is how you load page specific scripts!');
     </script>
   {{/inline}}
 {{/layouts/base}}

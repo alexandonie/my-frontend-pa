@@ -1,6 +1,6 @@
 import './styles/main.scss';
 
-import Main from './scripts/main';
+import App from './scripts/main';
 
-const praa = new Main();
-praa.bla();
+const app = new App();
+app.init();
