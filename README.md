@@ -1,13 +1,21 @@
 <p align="center">
   <a href="https://myfrontendpa.alexandonie.com/">
-    🤵🏻
+    #🤵🏻
   </a>
 </p>
+<h3 align="center">My front-end personal assistant</h3>
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-# 🤵🏻 My front-end personal assistant
+<p align="center">
+  A webpack boilerplate for static websites that does: scss, es6, handlebars, and more.
+  <br>
+  <a href="https://myfrontendpa.alexandonie.com"><strong>Explore the boilerplate website »</strong></a>
+  <br>
+  <br>
+  [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+  ·
+  [![devDependency Status](https://img.shields.io/david/dev/alexandonie/my-frontend-pa.svg)](https://david-dm.org/alexandonie/my-frontend-pa?type=dev)
+</p>
 
-A webpack boilerplate for static websites that does: scss, purgeCSS, es6, handlebars, and more.
 
 ## Installation
 
