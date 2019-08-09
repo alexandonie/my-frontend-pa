@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://getbootstrap.com/">
-    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/198/man-in-tuxedo_emoji-modifier-fitzpatrick-type-1-2_1f935-1f3fb_1f3fb.png" alt="My front-end PA logo" width="56" height="56">
+    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/198/man-in-tuxedo_emoji-modifier-fitzpatrick-type-1-2_1f935-1f3fb_1f3fb.png" alt="My front-end PA logo" width="48" height="48">
   </a>
 </p>
 
-<h3 align="center">My front-end personal assistant</h3>
+<h2 align="center">My front-end personal assistant</h2>
 
 <p align="center">
   A webpack boilerplate for static websites that does: es6, sass, handlebars and more.
