@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://myfrontendpa.alexandonie.com/" style="font-size: 56px; line-height: 0">
-	🤵🏻
+  <a href="https://myfrontendpa.alexandonie.com/">
+	<h1 align="center">🤵🏻</h1>
   </a>
 </p>
 <h3 align="center">My front-end personal assistant</h3>
@@ -15,11 +15,13 @@
 <hr />
 
 <span style="display: block;" align="center" valign="center">
+
   [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   .
   [![peerDependencies Status](https://img.shields.io/david/peer/alexandonie/my-frontend-pa.svg)](https://david-dm.org/alexandonie/my-frontend-pa?type=peer)
   .
  [![devDependency Status](https://img.shields.io/david/dev/alexandonie/my-frontend-pa.svg)](https://david-dm.org/alexandonie/my-frontend-pa?type=dev)
+
 </span>
 
 <hr />
