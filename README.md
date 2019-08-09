@@ -1,8 +1,9 @@
 <p align="center">
-  <a href="https://myfrontendpa.alexandonie.com/">
-	<h1 align="center">🤵🏻</h1>
+  <a href="https://getbootstrap.com/">
+    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/198/man-in-tuxedo_emoji-modifier-fitzpatrick-type-1-2_1f935-1f3fb_1f3fb.png" alt="My front-end PA logo" width="56" height="56">
   </a>
 </p>
+
 <h3 align="center">My front-end personal assistant</h3>
 
 <p align="center">
@@ -12,19 +13,11 @@
   <br>
 </p>
 
-<hr />
+<span style="display: block;" align="center">
 
-<span style="display: block;" align="center" valign="center">
-
-  [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-  .
-  [![peerDependencies Status](https://img.shields.io/david/peer/alexandonie/my-frontend-pa.svg)](https://david-dm.org/alexandonie/my-frontend-pa?type=peer)
-  .
- [![devDependency Status](https://img.shields.io/david/dev/alexandonie/my-frontend-pa.svg)](https://david-dm.org/alexandonie/my-frontend-pa?type=dev)
+  [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)   [![peerDependencies Status](https://img.shields.io/david/peer/alexandonie/my-frontend-pa.svg)](https://david-dm.org/alexandonie/my-frontend-pa?type=peer)  [![devDependency Status](https://img.shields.io/david/dev/alexandonie/my-frontend-pa.svg)](https://david-dm.org/alexandonie/my-frontend-pa?type=dev)
 
 </span>
-
-<hr />
 
 ## Installation
 
