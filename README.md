@@ -37,6 +37,17 @@ npm run install
 
 There's no CLI setup wizard or anything like that so once you have everything on your machine, rename the project accordingly and run ```npm run start``` for the development mode or ```npm run build``` for the production mode.
 
+## Features
+- development server with live reloading and local access from any device (laptop, phone, etc)
+- es6 support
+- handlebars support
+- html, css and js transpilation, bundling and optimization
+- sass support
+- purgeCSS support to remove dead code
+- js linting
+- cache busting
+- clean urls (through automated folder structuring)
+
 ## File structure
 
 ```
@@ -71,17 +82,6 @@ There's no CLI setup wizard or anything like that so once you have everything on
  ┣ 📜package-lock.json
  ┗ 📜package.json
 ```
-
-## Features
-- development server with live reloading and local access from any device (laptop, phone, etc)
-- es6 support
-- handlebars support
-- html, css and js transpilation, bundling and optimization
-- sass support
-- purgeCSS support to remove dead code
-- js linting
-- cache busting
-- clean urls (through automated folder structuring)
 
 ## Author
 
