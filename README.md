@@ -21,7 +21,7 @@
 
 ## Installation
 
-Make sure nodejs and npm are installed on your machine. If not, follow [these intructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and then proceed with the next steps:
+Make sure nodejs and npm are installed on your machine. If not, follow [these instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and then proceed with the next steps:
 
 ```bash
 git clone https://github.com/alexandonie/my-frontend-pa
