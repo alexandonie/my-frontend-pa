@@ -11,6 +11,8 @@ const generateHtmlPluginTemplates = (minify = false) => {
   const templatesLocation = resolvePath('src/views');
   const htmlTemplatePluginObjects = [];
   const allowedFiles = ['hbs', 'handlebars', 'pug', 'mustache', 'html'];
+  const faviconPath = resolvePath('src/favicon.ico');
+  const faviconExists = fs.existsSync(faviconPath);
 
   fs.readdirSync(templatesLocation).forEach(file => {
     const parts = file.split('.');
@@ -22,7 +24,7 @@ const generateHtmlPluginTemplates = (minify = false) => {
         filename: fileName === 'index' ? `${fileName}.html` : `${fileName}/index.html`,
         template: templatesLocation + '/' + file,
         minify,
-        favicon: resolvePath('src/favicon.ico')
+        favicon: faviconExists ? faviconPath : ''
       };
 
       htmlTemplatePluginObjects.push(new HtmlWebpackPlugin(config));
