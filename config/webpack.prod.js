@@ -19,7 +19,28 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'resolve-url-loader'
+          },
+          {
+            loader: 'sass-loader',
+            /**
+             * Options required by resolve-url-loader
+             * https://github.com/bholloway/resolve-url-loader/blob/master/packages/resolve-url-loader/README.md
+            */
+            options: {
+              sourceMap: true,
+              sourceMapContents: false
+            }
+          }
+        ]
       },
     ]
   },
