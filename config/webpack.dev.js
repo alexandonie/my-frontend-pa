@@ -49,6 +49,7 @@ module.exports = merge(common, {
     port: 3000,
     public: 'http://localhost:3000',
     overlay: true,
+    progress: true,
     stats: {
       children: false,
       maxModules: 0
