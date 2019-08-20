@@ -8,6 +8,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const PurgeCssPlugin = require('purgecss-webpack-plugin');
 const glob = require('glob');
 const { generateHtmlPluginTemplates } = require('./helpers');
+const webpack = require('webpack');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -31,10 +32,6 @@ module.exports = merge(common, {
           },
           {
             loader: 'sass-loader',
-            /**
-             * Options required by resolve-url-loader
-             * https://github.com/bholloway/resolve-url-loader/blob/master/packages/resolve-url-loader/README.md
-            */
             options: {
               sourceMap: true,
               sourceMapContents: false
@@ -65,7 +62,14 @@ module.exports = merge(common, {
       filename: '[name].[contentHash].css'
     }),
     new PurgeCssPlugin({
-      paths: glob.sync(`${paths.src}/**/*`,  { nodir: true })
+      paths: glob.sync(`${paths.src}/**/*`, { nodir: true })
+    }),
+    new webpack.ProgressPlugin({
+      profile: true
     })
-  ]
+  ],
+  stats: {
+    children: false,
+    maxModules: 0
+  }
 });
